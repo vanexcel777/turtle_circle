@@ -1,0 +1,10 @@
+<launch>
+    <node name="turtlesim_node" pkg="turtlesim" type="turtlesim_node"/>
+
+    <node name="turle_goto_service" pkg="turtle_circle" type="turtle_circle.py">
+        <param name="~rayon" value="2.4"/>    
+        <param name="~freq" value="1.0"/>  
+        <param name="~tour" value="1.0"/>  
+        <param name="~distance_tolerance" value="0.5"/> 
+    </node>
+</launch>
